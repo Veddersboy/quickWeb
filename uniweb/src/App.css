@@ -5,17 +5,22 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   /* background-color: #070606; */
   background-image: image-set('somethingEasy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
