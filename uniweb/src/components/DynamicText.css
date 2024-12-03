@@ -1,11 +1,19 @@
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 100s ease, transform 100s ease;
+    transition: opacity 5s ease, transform 5s ease;
   }
   
   .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
   }
+
   
+  h1{
+    color: white;
+  }
+  p{
+    color: white;
+    font-weight: 1000;
+  }
