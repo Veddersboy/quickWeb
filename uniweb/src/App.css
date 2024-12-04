@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  margin: 0; /* Remove any global margin */
+  padding: 0; /* Remove global padding */
+  width: 100%; /* Ensure the app takes up the full width */
+  height: 100%; /* Ensure it takes up the full height */
 }
 
 .App-logo {
@@ -20,6 +24,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  width: 100%; /* Ensure the header stretches the full width */
+  overflow: hidden; /* Prevent overflow or white gaps */
 }
 
 .App-link {
@@ -56,19 +62,21 @@
 /* Media Queries for responsiveness */
 
 /* For screens smaller than 768px (tablets and phones) */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-width: 602px){
   .logo-container {
+    flex-wrap: wrap; 
     flex-direction: row; /* Keep the logo and text next to each other */
     align-items: center; /* Center the logo and text */
-    margin-left: 0; /* Reset the left margin */
+    margin-left: -3; /* Reset the left margin */
     justify-content: center; /* Center both elements horizontally */
   }
 
   .logo-text {
     font-size: 2.5rem; /* Smaller font size for mobile devices */
     margin-left: 0; /* Remove the left margin */
-    margin-top: 0; /* Remove top margin */
-    margin-right: 1rem; /* Optional: Add some spacing between logo and text */
+    margin-top: -13rem; /* Remove top margin */
+    margin-left: 16rem; /* Optional: Add some spacing between logo and text */
+    
   }
 
   .logo-letter {
@@ -77,26 +85,116 @@
   }
 
   .App-logo {
-    height: 25vmin; /* Reduce the logo size on smaller screens */
-  }
-
-  .App-header {
-    background-color: rgba(0, 0, 0, 0.6); /* Set background color with opacity */
-    background-image: none; /* Remove the image to maintain the background color on smaller screens */
+    height: 15vmin; /* Smaller logo size for mobile screens */
   }
 }
 
-/* For very small screens, such as mobile phones */
-@media (max-width: 480px) {
+@media (min-width: 603px) and (max-width: 703px){
+  .logo-container {
+    flex-wrap: wrap; 
+    flex-direction: row; /* Keep the logo and text next to each other */
+    align-items: center; /* Center the logo and text */
+    margin-left: -6; /* Reset the left margin */
+    justify-content: center; /* Center both elements horizontally */
+  }
+
   .logo-text {
-    font-size: 2rem; /* Even smaller text for very small screens */
+    font-size: 3rem; /* Smaller font size for mobile devices */
+    margin-left: 0; /* Remove the left margin */
+    margin-top: -12rem; /* Remove top margin */
+    margin-left: 17.5rem; /* Optional: Add some spacing between logo and text */
+    
+  }
+
+  .logo-letter {
+    margin-right: 1rem; /* Adjust the margin to ensure text is next to the logo */
+    display: block; /* Keeps the logo from wrapping */
   }
 
   .App-logo {
-    height: 20vmin; /* Reduce logo size even further on very small screens */
-  }
-
-  .App-header {
-    background-color: rgba(0, 0, 0, 0.6); /* Maintain the same background color on small screens */
+    height: 15vmin; /* Smaller logo size for mobile screens */
   }
 }
+
+@media (min-width: 704px) and (max-width: 704px){
+  .logo-container {
+    flex-wrap: wrap; 
+    flex-direction: row; /* Keep the logo and text next to each other */
+    align-items: center; /* Center the logo and text */
+    margin-left: -6; /* Reset the left margin */
+    justify-content: center; /* Center both elements horizontally */
+  }
+
+  .logo-text {
+    font-size: 3rem; /* Smaller font size for mobile devices */
+    margin-left: 0; /* Remove the left margin */
+    margin-top: -12rem; /* Remove top margin */
+    margin-left: 19rem; /* Optional: Add some spacing between logo and text */
+    
+  }
+
+  .logo-letter {
+    margin-right: 1rem; /* Adjust the margin to ensure text is next to the logo */
+    display: block; /* Keeps the logo from wrapping */
+  }
+
+  .App-logo {
+    height: 15vmin; /* Smaller logo size for mobile screens */
+  }
+}
+
+@media (min-width: 705px) and (max-width: 740px){
+  .logo-container {
+    flex-wrap: wrap; 
+    flex-direction: row; /* Keep the logo and text next to each other */
+    align-items: center; /* Center the logo and text */
+    margin-left: -6; /* Reset the left margin */
+    justify-content: center; /* Center both elements horizontally */
+  }
+
+  .logo-text {
+    font-size: 3rem; /* Smaller font size for mobile devices */
+    margin-left: 0; /* Remove the left margin */
+    margin-top: -12rem; /* Remove top margin */
+    margin-left: 17.5rem; /* Optional: Add some spacing between logo and text */
+    
+  }
+
+  .logo-letter {
+    margin-right: 1rem; /* Adjust the margin to ensure text is next to the logo */
+    display: block; /* Keeps the logo from wrapping */
+  }
+
+  .App-logo {
+    height: 15vmin; /* Smaller logo size for mobile screens */
+  }
+}
+
+@media (min-width: 742px) and (max-width: 1222px){
+  .logo-container {
+    flex-wrap: wrap; 
+    flex-direction: row; /* Keep the logo and text next to each other */
+    align-items: center; /* Center the logo and text */
+    margin-left: -6; /* Reset the left margin */
+    justify-content: center; /* Center both elements horizontally */
+  }
+
+  .logo-text {
+    font-size: 2.5rem; /* Smaller font size for mobile devices */
+    margin-left: 0; /* Remove the left margin */
+    margin-top: -15rem; /* Remove top margin */
+    margin-left: 24.5rem; /* Optional: Add some spacing between logo and text */
+    
+  }
+
+  .logo-letter {
+    margin-right: 5rem; /* Adjust the margin to ensure text is next to the logo */
+    display: block; /* Keeps the logo from wrapping */
+  }
+
+  .App-logo {
+    height: 15vmin; /* Smaller logo size for mobile screens */
+  }
+}
+
+
