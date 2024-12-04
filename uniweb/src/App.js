@@ -4,6 +4,8 @@ import React from 'react';
 import DynamicTextWithObserver from "./components/DynamicTextWithObserver";
 import LogoHeader from './components/LogoFrontPage';
 
+
+
 function App() {
   
   return (
