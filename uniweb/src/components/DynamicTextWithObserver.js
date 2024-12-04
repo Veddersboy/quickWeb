@@ -71,8 +71,7 @@ const DynamicTextWithObserver = () => {
       >
         <h1>WHY CHOOSE US</h1>
         <p>
-          We provide debt-free education with real-world internship-based
-          learning experiences that prepare students for the workforce.
+        Industry University offers free tuition upon completion of the degree program an individual is apart of. Expanding on this, the way it is possible also sets us apart, as our internship-based curriculum allows for a streamlined and seamless transition into the real world, while also applying concepts learned in classes in ways that are expected in the workforce and beyond.
         </p>
       </div>
 
@@ -83,8 +82,7 @@ const DynamicTextWithObserver = () => {
       >
         <h1>OUR VISION</h1>
         <p>
-          Our vision is to foster a community of innovative thinkers who will
-          shape the future of technology and society.
+        Our vision is to create a community of wide variety academic scholars in which their education is accessible and directly aligned with the needs of the real world work force. We are committed to eliminating tuition fees upon degree completion by providing internship-based learning. This will not only pay for the time spent at our institution, but will also bridge the gap between academic learning and real world experience. We invest in future talent. We invest in you.
         </p>
       </div>
 
@@ -95,8 +93,8 @@ const DynamicTextWithObserver = () => {
       >
         <h1>APPLY NOW</h1>
         <p>
-          Be part of the revolution. Join us and experience an education that
-          prioritizes real-world learning and eliminates financial barriers.
+          Join us and experience an education that
+          prioritizes real-world learning and eliminates financial barriers!
         </p>
         <button
           style={{

@@ -15,6 +15,9 @@ function App() {
         <h1></h1>
         <h1></h1>
         <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
         <h1>Welcome To a Brighter Future</h1>
         <h1></h1>
         <h1></h1>
