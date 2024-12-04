@@ -27,12 +27,40 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: gold;
+  /* color: g; */
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.logo-container {
+  display: flex; /* Align logo and text horizontally */
+  align-items: center; /* Vertically center the logo and text */
+  font-size: 3rem; /* Set a base font size for the text */
+  flex-wrap: wrap; /* Allow text to wrap around the image */
+  max-width: 100%; /* Prevent the container from becoming too wide */
+  padding: 0; /* Remove any default padding */
+  margin-left: -9rem; /* Adjust this value to move the text left */
+}
+
+.logo-letter {
+  margin-right: 0.2rem; /* Small space between logo and text */
+  display: block; /* Ensure logo is treated as a block for better wrapping */
+}
+
+.logo-text {
+  font-size: 4rem; /* Adjust the text size to make it proportionate to the logo */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Adjust text color */
+  display: block; /* Makes text take up full width of available space */
+  line-height: 1.2; /* Adjust text vertical alignment */
+  word-wrap: break-word; /* Ensures that long words will break and wrap onto the next line */
+  margin: 0; /* Remove any extra space around the text */
+  margin-left: -9rem; /* Adjust this value to move the text left */
+  margin-top: 8.9rem;
+}
+
 /* 
 @keyframes App-logo-spin {
   from {
