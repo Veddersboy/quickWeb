@@ -8,14 +8,7 @@
   position: relative;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-header {
-  /* background-color: #070606; */
   background-image: image-set('somethingEasy.jpg');
   background-size: cover;
   background-position: center;
@@ -27,7 +20,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* color: g; */
 }
 
 .App-link {
@@ -61,12 +53,38 @@
   margin-top: 8.9rem;
 }
 
-/* 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .logo-container {
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center; /* Center the logo and text */
+    margin-left: 0; /* Reset the left margin to ensure the text is centered */
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo-text {
+    font-size: 2.5rem; /* Smaller font size for mobile devices */
+    margin-left: 0; /* Remove the left margin for better spacing */
+    margin-top: 1rem; /* Add some space above the text */
   }
-} */
+
+  .logo-letter {
+    margin-right: 0; /* Remove space between logo and text */
+  }
+
+  .App-logo {
+    height: 30vmin; /* Reduce the logo size on smaller screens */
+  }
+}
+
+/* For very small screens, such as mobile phones */
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 2rem; /* Even smaller text for very small screens */
+  }
+
+  .App-logo {
+    height: 25vmin; /* Reduce logo size even further on very small screens */
+  }
+}
